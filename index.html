@@ -3,138 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>유혼</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잃어버린 영혼들</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            background-color: #0a0a0a;
-            color: #aa3322;
-            font-family: "Courier New", monospace;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            min-height: 100vh;
-            overflow: hidden;
-        }
-
-        .background-noise {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect fill='%23111111' width='100' height='100'/%3E%3Ccircle cx='10' cy='10' r='1' fill='%23444444'/%3E%3C/svg%3E") repeat;
-            opacity: 0.03;
-            z-index: 0;
-        }
-
-        header {
-            z-index: 1;
-            text-align: center;
-            padding: 1rem 2rem;
-        }
-
-        .logo {
-            font-size: 2rem;
-            color: #dd4433;
-            display: inline-block;
-            cursor: default;
-            position: relative;
-        }
-
-        /* glitch effect */
-        .logo:hover {
-            animation: glitch 700ms infinite;
-        }
-
-        @keyframes glitch {
-            0% {
-                transform: translate(0);
-            }
-
-            20% {
-                transform: translate(-2px, 1px);
-            }
-
-            40% {
-                transform: translate(2px, -1px);
-            }
-
-            60% {
-                transform: translate(-1px, 2px);
-            }
-
-            80% {
-                transform: translate(1px, -2px);
-            }
-
-            100% {
-                transform: translate(0);
-            }
-        }
-
-        .menu {
-            margin-top: .5rem;
-            font-size: .9rem;
-            letter-spacing: 2px;
-        }
-
-        .menu span {
-            margin: 0 .5rem;
-        }
-
-        .content {
-            z-index: 1;
-            text-align: center;
-            max-width: 600px;
-            padding: 2rem;
-            background-color: rgba(20, 15, 10, 0.6);
-            box-shadow: 0 0 10px #000;
-            border: 1px solid #221b17;
-            margin-top: 1rem;
+            background-color: #000000;
+            color: #aaaaaa;
+            font-family: 'Courier New', monospace;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%23101010" stroke-width="1.5"/></svg>');
         }
 
         h1 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+            color: #800000;
+            text-shadow: 0 0 5px #ff0000;
+            border-bottom: 1px solid #222;
+            padding-bottom: 10px;
+            letter-spacing: 1px;
         }
 
-        p {
-            font-size: .9rem;
-            line-height: 1.6;
-            white-space: pre-wrap;
+        a {
+            color: #800000;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 5px 10px;
+            border: 1px solid #222;
+            transition: all 0.3s;
         }
 
-        img,
-        video {
-            margin-top: 1.5rem;
-            width: 100%;
-            height: auto;
-            background-color: #000;
-            border: 1px solid #111;
+        a:hover {
+            color: #000000;
+            border-color: #000000;
+            background-color: rgba(80, 0, 0, 0.2);
+        }
+
+        .separator {
+            margin: 30px 0;
+            text-align: center;
+            color: #000000;
+            letter-spacing: 5px;
+        }
+
+        .warning {
+            color: #000000;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-    <div class="background-noise"><br></div>
-    <header>
-        <div class="logo"><br></div>
-    </header>
-    <div class="content">
-        <h1>시스템 오류</h1>
-        <p><br></p>
-        <p>접근 금지. 기억이 사라진 자리. [로그 #04] : &quot;터널 끝에서 누군가 기다린다.&quot; [로그 #19] : &quot;이름이 흔들린다.&quot; █ █ █ 다시 시작된다 █ █ █ 너는 이미 본다 우리는 더 이상 우리가 아니다.</p>
-    </div>
-
-<div style="color: red; font-size: 12px; width: 600px; margin: 0 auto; text-align: center;"><a href="h/"></a></div>
+    <h1>잃어버린 영혼들</h1>
+    <p>어둠 속에서 그들은 속삭입니다. 당신이 잠든 사이, 그들은 당신의 이름을 부릅니다. 그들은... 돌아오고 싶어합니다.</p>
+    <div class="separator">█ █ █</div>
+    <p>1989년 10월, 첫 번째 현상이 기록되었습니다. 영혼들이 물리적 형태를 취하기 시작했습니다. 그들은 살아있는 자들에게 무언가를 전하려 합니다.</p>
+    <p class="warning">경고: 그들의 말을 듣지 마십시오. 그들은 당신을 속일 것입니다.</p>
+    <div class="separator">█ █ █</div>
+    <p>2003년 이후로 47명의 연구원이 실종되었습니다. 우리는 그들이 어디로 갔는지 알고 있습니다... 하지만 그들을 되찾을 수는 없습니다.</p>
+    <div class="separator">█ █ █</div>
+    <p>This is not a project. This is a <span class="warning">warning</span>. The souls are not at peace. They linger in the spaces between light and shadow, whispering names of those who will join them.</p>
+    <div class="separator">█ █ █</div>
+    <p><a href="#" class="warning">접근 금지</a></p>
 </body>
 
 </html>
